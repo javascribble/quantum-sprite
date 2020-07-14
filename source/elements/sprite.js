@@ -1,9 +1,8 @@
-import { Component, define, query } from '../../references/quantum.js';
-import { sprite } from '../templates/sprite.js';
+import { Component } from '../../references/quantum.js';
 
 export class Sprite extends Component {
     constructor() {
-        super(sprite);
+        super();
 
         const style = query(this.shadowRoot, 'div').style;
         style.width = '15px';
@@ -11,6 +10,10 @@ export class Sprite extends Component {
         style.background = `url('${this.getAttribute('url')}')`;
         style.animation = 'play 1s steps(10) infinite';
     }
+
+    static template = document.querySelector('#quantum-sprite');
+
+    static attributes = [];
 }
 
-define(Sprite);
+customElements.define('quantum-sprite', Sprite);
