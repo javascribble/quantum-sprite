@@ -1,7 +1,6 @@
-import { Component, template } from '../../references/quantum.js';
 import html from '../templates/sprite.js';
 
-export class Sprite extends Component {
+export class Sprite extends quantum.Component {
     constructor() {
         super();
 
@@ -12,9 +11,7 @@ export class Sprite extends Component {
         style.animation = 'play 1s steps(10) infinite';
     }
 
-    static template = template(html);
-
-    static attributes = [];
+    static template = quantum.template(html);
 }
 
-customElements.define('quantum-sprite', Sprite);
+quantum.define('quantum-sprite', Sprite);
