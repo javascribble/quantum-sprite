@@ -1,1 +1,3 @@
-export * from './elements/sprite.js';
+import * as sprite from './elements/sprite.js';
+
+Object.assign(window, sprite);

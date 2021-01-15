@@ -1,4 +1,3 @@
-import { Component, template, define } from '../import.js';
 import html from '../templates/sprite.js';
 
 export class Sprite extends Component {
