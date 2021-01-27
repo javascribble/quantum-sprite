@@ -1,5 +1,7 @@
 import html from '../templates/sprite.js';
 
+const { Component, template, define } = quantum;
+
 export class Sprite extends Component {
     constructor() {
         super();
