@@ -1,3 +1,1 @@
-import { Sprite } from './elements/sprite.js';
-
-Quantum.Sprite = Sprite;
+import './elements/sprite.js';
