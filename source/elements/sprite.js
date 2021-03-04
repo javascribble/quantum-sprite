@@ -1,5 +1,3 @@
-import html from '../templates/sprite.js';
-
 export class Sprite extends Quantum {
     constructor() {
         super();
@@ -11,5 +9,3 @@ export class Sprite extends Quantum {
         style.animation = 'play 1s steps(10) infinite';
     }
 }
-
-Sprite.define('quantum-sprite', html);
